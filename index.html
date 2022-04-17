@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/css/weather.css" />
+  </head>
+  <body>
+    <div id="weatherWrap">
+      <div class="diDian">
+        <img src="static/image/didian.png" alt="" width="30" />
+        <div id="diDianText">重庆</div>
+      </div>
+      <div id="showDiv">
+        <div class="souSuo">
+          <input
+            type="text"
+            placeholder="请输入您要搜索的城市..."
+            class="cityText"
+          />
+          <button type="submit" class="btn2"></button>
+        </div>
+        <div class="history" id="history"></div>
+      </div>
+     
+
+      <div id="messageDiv">
+        <div id="lifeNumber">
+          <img src="static/image/lanqiu.png" alt="" />
+          <div>生活指数</div>
+        </div>
+        <div id="todayWeather">
+          <img src="static/image/yifu.png" alt="" />
+          <div>今日天气</div>
+        </div>
+        <div id="afterWeather">
+          <img src="static/image/plane.png" alt="" />
+          <div>未来天气</div>
+        </div>
+      </div>
+    </div>
+    <script src="static/js/xiangmu.js"></script>
+  </body>
+</html>
