@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  #weatherWrap {
+    width: 100%;
+    background-image: url(../image/img.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+    .beforebtn {
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      width: 10%;
+      height: 10%;
+      background-image: url(../image/arr.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+    .diDian {
+      width: 80px;
+      height: 50px;
+      font-size: 30px;
+      margin: 10px auto;
+    }
+    #showDiv {
+      margin: auto;
+      width: 93%;
+      .history{
+        display: none;
+      }
+      .history1{
+       position: fixed;
+        margin-left: 10px;
+        opacity: 1;
+        width: 69.1%;
+        background-color: rgba(255, 255, 255, 0.6);
+        top: 56%;
+        left: 15%;
+        height: 25px;
+        color: black;
+        height: auto;
+        text-align: left;}
+      .life-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+        text-align: center;
+
+        .afteritem1 {
+          background-image: url(../image/ball.png);
+          background-size: 20%;
+          background-repeat: no-repeat;
+        }
+        .afteritem2 {
+          background-image: url(../image/car.png);
+          background-size: 18%;
+          background-repeat: no-repeat;
+        }
+        .afteritem3 {
+          background-size: 20%;
+          background-repeat: no-repeat;
+          background-image: url(../image/yifu.png);
+        }
+        .afteritem4 {
+          background-size: 25%;
+          background-repeat: no-repeat;
+          background-image: url(../image/fish.png);
+        }
+        .item {
+          height: 130px;
+          line-height: 77px;
+          width: 44%;
+          color: #6a5acd;
+          padding: 10px;
+          font-size: 10px;
+          .itemBoxItem1 {
+            height: 20px;
+            font-size: 13px;
+            margin-top: -26px;
+          }
+          .itemBoxItem2 {
+            height: 50px;
+            font-size: 13px;
+          }
+          .itemBoxItem3 {
+            padding: 5px;
+            height: 50px;
+            font-size: 10px;
+            line-height: 20px;
+          }
+        }
+      }
+      .today {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: auto;
+        .airnumber {
+          margin: auto;
+          font-size: 150px;
+          sup {
+            font-size: 50px;
+          }
+        }
+        .cloudText {
+          margin-bottom: 10px;
+          font-size: 30px;
+        }
+        .windText {
+          font-size: 20px;
+        }
+        .tips {
+          margin-top: 10px;
+          font-size: 17px;
+        }
+        margin: 77px auto;
+      }
+
+      .souSuo {
+        z-index: 1;
+        position: fixed;
+        width: 70%;
+        height: 40px;
+        top: 50%;
+        left: 17%;
+        margin: auto;
+        background-color: #ddd8b0;
+        border-radius: 5px;
+        input {
+          width: 200px;
+          height: 30px;
+          position: absolute;
+          left: 5%;
+          text-indent: 3px;
+          border: transparent;
+          background-color: transparent;
+          margin-top: 5px;
+        }
+        button {
+          position: absolute;
+          margin-top: 4px;
+          right: 6%;
+          width: 32px;
+          height: 32px;
+          background-image: url(../image/search.png);
+          background-size: contain;
+          border: transparent;
+          background-color: transparent;
+        }
+      }
+      .sevenDay {
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 100%;
+        height: 120%;
+        margin: auto;
+        border-radius: 20px;
+        .dayTem {
+          display: flex;
+          justify-content: space-around;
+          height: 30px;
+          margin-bottom: 10px;
+          color: black;
+          div {
+            margin-top: 30px;
+            width: 33%;
+          }
+        }
+      }
+    }
+   
+      div{
+        position: relative;
+        width: 100%;
+        span{
+          position: absolute;
+          right: 10px;
+          width: 20px;
+          height: 20px;
+          background-image: url(../image/x.png);
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: 0;
+        }
+      }
+    
+    #messageDiv {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      position: absolute;
+      bottom: 2%;
+      img {
+        width: 30px;
+      }
+    }
+  }
+}
